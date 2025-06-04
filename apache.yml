@@ -2,8 +2,8 @@
   become: True
   tasks:
     - name: Install packages
-      yum:
-        name: "nginx"
+      amazon-linux-extras:
+        name: "nginx1"
         state: "present"
     - name: Start nginx server
       service:
